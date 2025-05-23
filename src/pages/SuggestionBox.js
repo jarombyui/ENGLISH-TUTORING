@@ -54,7 +54,7 @@ const SuggestionBox = () => {
           <div className="mt-12 bg-gray-900 rounded-lg shadow-lg p-6">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="name" className="block text-sm font-medium text-white">
                   Nombre
                 </label>
                 <input
@@ -64,12 +64,12 @@ const SuggestionBox = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+                  className="mt-1 block w-full rounded-md bg-gray-100 text-black placeholder-gray-500 border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="email" className="block text-sm font-medium text-white">
                   Correo Electrónico
                 </label>
                 <input
@@ -79,12 +79,12 @@ const SuggestionBox = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+                  className="mt-1 block w-full rounded-md bg-gray-100 text-black placeholder-gray-500 border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
                 />
               </div>
 
               <div>
-                <label htmlFor="category" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="category" className="block text-sm font-medium text-white">
                   Categoría
                 </label>
                 <select
@@ -92,7 +92,7 @@ const SuggestionBox = () => {
                   name="category"
                   value={formData.category}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+                  className="mt-1 block w-full rounded-md bg-gray-100 text-black placeholder-gray-500 border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
                 >
                   <option value="general">General</option>
                   <option value="cursos">Cursos</option>
@@ -102,7 +102,7 @@ const SuggestionBox = () => {
               </div>
 
               <div>
-                <label htmlFor="suggestion" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="suggestion" className="block text-sm font-medium text-white">
                   Tu Sugerencia
                 </label>
                 <textarea
@@ -112,7 +112,7 @@ const SuggestionBox = () => {
                   value={formData.suggestion}
                   onChange={handleChange}
                   required
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"
+                  className="mt-1 block w-full rounded-md bg-gray-100 text-black placeholder-gray-500 border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
                 />
               </div>
 

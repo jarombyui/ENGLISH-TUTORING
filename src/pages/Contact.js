@@ -76,7 +76,7 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="ml-3">
-                    <p className="text-gray-600">Dirección: Urbanización Virgen del Carmen Calle Gardenias N°14, Ate</p>
+                    <p className="text-gray-600">Dirección: Urb. Santa Patricia, La Molina, Lima, Perú</p>
                   </div>
                 </div>
 
@@ -99,8 +99,7 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="ml-3">
-                    <p className="text-gray-600">Email: ingeniumsoftwares@gmail.com
-                    </p>
+                    <p className="text-gray-600">Email: ingeniumalliance@gmail.com</p>
                   </div>
                 </div>
               </div>

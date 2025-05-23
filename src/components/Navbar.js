@@ -37,7 +37,7 @@ const Navbar = () => {
               <img
                 src="/images/INGENIUM ACADEMY.png"
                 alt="Ingenium Academy Logo"
-                className="h-16 w-auto max-w-[200px] object-contain drop-shadow-lg rounded"
+                className="h-auto max-h-16 md:max-h-20 w-auto max-w-[220px] md:max-w-[300px] object-contain drop-shadow-lg px-2 py-1"
               />
             </Link>
           </div>

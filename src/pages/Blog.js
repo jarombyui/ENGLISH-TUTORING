@@ -9,7 +9,7 @@ const initialBlogPosts = [
     date: '10 de Junio, 2024',
     author: 'Equipo INGENIUM ACADEMY',
     category: 'Oportunidades',
-    image: '/images/english.jpg',
+    image: '/images/us-university.jpg',
     readTime: '4 min',
     tags: ['Inglés', 'Estudios', 'Trabajo', 'Internacional']
   },
@@ -20,7 +20,7 @@ const initialBlogPosts = [
     date: '5 de Junio, 2024',
     author: 'Equipo INGENIUM ACADEMY',
     category: 'Testimonios',
-    image: '/images/intenational-aplication.jpg',
+    image: '/images/succes-students.jpg',
     readTime: '5 min',
     tags: ['Éxito', 'Universidades', 'USA', 'Testimonios']
   },
@@ -31,7 +31,7 @@ const initialBlogPosts = [
     date: '1 de Junio, 2024',
     author: 'Equipo INGENIUM ACADEMY',
     category: 'Aprendizaje',
-    image: '/images/conversation-native.jpg',
+    image: '/images/tips-learn-english.jpg',
     readTime: '3 min',
     tags: ['Tips', 'Aprendizaje', 'Inglés', 'Nativos']
   },
@@ -42,7 +42,7 @@ const initialBlogPosts = [
     date: '28 de Mayo, 2024',
     author: 'Equipo INGENIUM ACADEMY',
     category: 'Cultura',
-    image: '/images/american-culture.jpg',
+    image: '/images/life-students.jpg',
     readTime: '4 min',
     tags: ['Cultura', 'USA', 'Universidad', 'Experiencias']
   },
@@ -64,7 +64,7 @@ const initialBlogPosts = [
     date: '15 de Mayo, 2024',
     author: 'Equipo INGENIUM ACADEMY',
     category: 'Universidades',
-    image: '/images/intenational-aplication.jpg',
+    image: '/images/college-application.jpg',
     readTime: '5 min',
     tags: ['Postulación', 'Universidades', 'USA', 'Guía']
   }
