@@ -9,7 +9,7 @@ const Hero = () => {
         <h1 className="text-5xl font-bold text-yellow-500 mb-4">
           ¡Aprende <span className="text-white">Idiomas</span> por solo
         </h1>
-        <p className="text-4xl font-bold text-yellow-500">S/1.00 <span className="text-white">!</span></p>
+        <p className="text-4xl font-bold text-yellow-500">S/5.00 <span className="text-white">!</span></p>
         <p className="mt-4 text-lg text-white">
           Abierto para <span className="font-bold">todas las edades</span> desde los <span className="font-bold">6 años</span> en adelante.
         </p>
