@@ -1,38 +1,72 @@
 import React, { useState, useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const initialBlogPosts = [
   {
     id: 1,
-    title: 'Tendencias en Desarrollo Web 2024',
-    excerpt: 'Descubre las últimas tecnologías y frameworks que están revolucionando el desarrollo web, desde React y Next.js hasta las nuevas APIs de navegador.',
-    date: '15 de Marzo, 2024',
+    title: '¿Por qué el inglés es la llave para estudiar y trabajar en el extranjero?',
+    excerpt: 'Descubre cómo dominar el inglés puede abrirte puertas a becas, universidades y empleos internacionales.',
+    date: '10 de Junio, 2024',
     author: 'Equipo INGENIUM ACADEMY',
-    category: 'Desarrollo Web',
-    image: '/images/blog-images/tendencias-web.png',
-    readTime: '5 min',
-    tags: ['Web', 'Tecnología', 'React', 'Next.js']
+    category: 'Oportunidades',
+    image: '/images/english.jpg',
+    readTime: '4 min',
+    tags: ['Inglés', 'Estudios', 'Trabajo', 'Internacional']
   },
   {
     id: 2,
-    title: 'Inteligencia Artificial en el Desarrollo de Software',
-    excerpt: 'Cómo la IA está transformando la forma en que desarrollamos software, desde la generación de código hasta la optimización de procesos.',
-    date: '10 de Marzo, 2024',
+    title: 'Historias de éxito: Nuestros estudiantes en universidades de USA',
+    excerpt: 'Testimonios reales de alumnos que lograron ingresar a universidades americanas gracias a su preparación en INGENIUM ACADEMY.',
+    date: '5 de Junio, 2024',
     author: 'Equipo INGENIUM ACADEMY',
-    category: 'Inteligencia Artificial',
-    image: '/images/blog-images/IA-SOFTWARE.jpg',
-    readTime: '6 min',
-    tags: ['IA', 'Desarrollo', 'Innovación', 'Tecnología']
+    category: 'Testimonios',
+    image: '/images/intenational-aplication.jpg',
+    readTime: '5 min',
+    tags: ['Éxito', 'Universidades', 'USA', 'Testimonios']
   },
   {
     id: 3,
-    title: 'Optimización de Bases de Datos para Empresas',
-    excerpt: 'Estrategias y mejores prácticas para optimizar el rendimiento de tus bases de datos y mejorar la experiencia del usuario.',
-    date: '5 de Marzo, 2024',
+    title: 'Tips para aprender inglés rápido y sin frustraciones',
+    excerpt: 'Consejos prácticos de nuestros docentes nativos para avanzar más rápido y disfrutar el proceso.',
+    date: '1 de Junio, 2024',
     author: 'Equipo INGENIUM ACADEMY',
-    category: 'Bases de Datos',
-    image: '/images/blog-images/Optimizar-Base-Dato.jpg',
+    category: 'Aprendizaje',
+    image: '/images/conversation-native.jpg',
+    readTime: '3 min',
+    tags: ['Tips', 'Aprendizaje', 'Inglés', 'Nativos']
+  },
+  {
+    id: 4,
+    title: '¿Cómo es la vida universitaria en Estados Unidos?',
+    excerpt: 'Conoce de primera mano las experiencias, retos y oportunidades de estudiar en USA.',
+    date: '28 de Mayo, 2024',
+    author: 'Equipo INGENIUM ACADEMY',
+    category: 'Cultura',
+    image: '/images/american-culture.jpg',
     readTime: '4 min',
-    tags: ['Bases de Datos', 'Optimización', 'Empresas', 'Rendimiento']
+    tags: ['Cultura', 'USA', 'Universidad', 'Experiencias']
+  },
+  {
+    id: 5,
+    title: 'La importancia de certificar tu nivel de inglés',
+    excerpt: 'Por qué una certificación internacional puede marcar la diferencia en tu CV y tu futuro académico.',
+    date: '20 de Mayo, 2024',
+    author: 'Equipo INGENIUM ACADEMY',
+    category: 'Certificación',
+    image: '/images/english-level-certification.jpg',
+    readTime: '3 min',
+    tags: ['Certificación', 'Inglés', 'CV', 'Futuro']
+  },
+  {
+    id: 6,
+    title: 'Preparando tu postulación: Lo que buscan las universidades americanas',
+    excerpt: 'Guía paso a paso para destacar en tu aplicación y aumentar tus posibilidades de éxito.',
+    date: '15 de Mayo, 2024',
+    author: 'Equipo INGENIUM ACADEMY',
+    category: 'Universidades',
+    image: '/images/intenational-aplication.jpg',
+    readTime: '5 min',
+    tags: ['Postulación', 'Universidades', 'USA', 'Guía']
   }
 ];
 
@@ -100,84 +134,94 @@ const Blog = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-extrabold text-yellow-500 mb-4 font-['Montserrat'] tracking-tight drop-shadow-lg pt-24 scroll-mt-32">
-            Blog INGENIUM ACADEMY
-          </h2>
-          <p className="mt-4 text-2xl text-white max-w-3xl mx-auto font-['Poppins']">
-            Descubre las últimas tendencias en desarrollo de software, tecnología y negocios digitales.
-          </p>
-        </div>
+    <>
+      <Helmet>
+        <title>Blog de Inglés, Cultura y Éxito | INGENIUM ACADEMY</title>
+        <meta name="description" content="Artículos, tips y testimonios sobre inglés, cultura americana, asesoría universitaria y certificación internacional. Inspírate y transforma tu futuro." />
+        <meta property="og:title" content="Blog de Inglés, Cultura y Éxito | INGENIUM ACADEMY" />
+        <meta property="og:description" content="Tips, historias de éxito y recursos sobre inglés, cultura americana y asesoría internacional. ¡Motívate a estudiar con nosotros!" />
+        <meta property="og:image" content="https://ingeniumacademy.netlify.app/images/ingenium-academy-logo.png" />
+        <meta property="og:url" content="https://ingeniumacademy.netlify.app/blog" />
+      </Helmet>
+      <div className="min-h-screen bg-black py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-extrabold text-yellow-500 mb-4 font-['Montserrat'] tracking-tight drop-shadow-lg pt-24 scroll-mt-32">
+              Blog INGENIUM ACADEMY
+            </h2>
+            <p className="mt-4 text-2xl text-white max-w-3xl mx-auto font-['Poppins']">
+              Descubre las últimas tendencias en desarrollo de software, tecnología y negocios digitales.
+            </p>
+          </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {blogPosts.map((post, idx) => {
-            const key = typeof post.id === 'string' ? post.id : `local-${post.id}`;
-            return (
-              <div key={key} className="bg-gray-900 border border-yellow-500 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 hover:border-yellow-400">
-                <div className="relative h-48 bg-gray-800">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="absolute inset-0 w-full h-full object-cover object-center rounded-t-xl shadow-md"
-                    onError={e => {
-                      if (!errorImages.current[key]) {
-                        errorImages.current[key] = true;
-                        e.target.src = '/images/blog-sst.jpg';
-                      }
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-yellow-500/10 rounded-t-xl"></div>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="px-3 py-1 text-sm font-semibold text-yellow-500 bg-yellow-500/10 rounded-full">
-                      {post.category}
-                    </span>
-                    <span className="text-sm text-yellow-500">{post.readTime} de lectura</span>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {blogPosts.map((post, idx) => {
+              const key = typeof post.id === 'string' ? post.id : `local-${post.id}`;
+              return (
+                <div key={key} className="bg-gray-900 border border-yellow-500 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 hover:border-yellow-400">
+                  <div className="relative h-48 bg-gray-800">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="absolute inset-0 w-full h-full object-cover object-center rounded-t-xl shadow-md"
+                      onError={e => {
+                        if (!errorImages.current[key]) {
+                          errorImages.current[key] = true;
+                          e.target.src = '/images/blog-sst.jpg';
+                        }
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-yellow-500/10 rounded-t-xl"></div>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2 whitespace-normal break-words font-['Montserrat']">{post.title}</h3>
-                  <p className="text-white/80 mb-4 font-['Poppins']">{post.excerpt}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {post.tags && post.tags.map((tag, index) => (
-                      <span key={index} className="px-2 py-1 text-xs font-medium text-yellow-500 bg-yellow-500/10 rounded-full">
-                        #{tag}
+                  <div className="p-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="px-3 py-1 text-sm font-semibold text-yellow-500 bg-yellow-500/10 rounded-full">
+                        {post.category}
                       </span>
-                    ))}
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                      <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center mr-2">
-                        <span className="text-yellow-500">👤</span>
-                      </div>
-                      <div>
-                        <p className="text-sm font-medium text-white font-['Poppins']">{post.author}</p>
-                        <p className="text-xs text-yellow-500 font-['Poppins']">{post.date}</p>
-                      </div>
+                      <span className="text-sm text-yellow-500">{post.readTime} de lectura</span>
                     </div>
-                    <button className="text-yellow-500 hover:text-white transition-colors duration-300 font-semibold font-['Montserrat']">
-                      Leer más →
-                    </button>
+                    <h3 className="text-xl font-bold text-white mb-2 whitespace-normal break-words font-['Montserrat']">{post.title}</h3>
+                    <p className="text-white/80 mb-4 font-['Poppins']">{post.excerpt}</p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {post.tags && post.tags.map((tag, index) => (
+                        <span key={index} className="px-2 py-1 text-xs font-medium text-yellow-500 bg-yellow-500/10 rounded-full">
+                          #{tag}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center">
+                        <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center mr-2">
+                          <span className="text-yellow-500">👤</span>
+                        </div>
+                        <div>
+                          <p className="text-sm font-medium text-white font-['Poppins']">{post.author}</p>
+                          <p className="text-xs text-yellow-500 font-['Poppins']">{post.date}</p>
+                        </div>
+                      </div>
+                      <button className="text-yellow-500 hover:text-white transition-colors duration-300 font-semibold font-['Montserrat']">
+                        Leer más →
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
 
-        <div className="text-center mt-12">
-          <button
-            className="bg-yellow-500 text-black py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors duration-300 font-semibold shadow-md hover:shadow-lg font-['Montserrat']"
-            onClick={handleLoadMore}
-            disabled={loading}
-          >
-            {loading ? 'Cargando...' : 'Ver más artículos'}
-          </button>
-          {error && <p className="mt-4 text-yellow-500 font-['Poppins']">{error}</p>}
+          <div className="text-center mt-12">
+            <button
+              className="bg-yellow-500 text-black py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors duration-300 font-semibold shadow-md hover:shadow-lg font-['Montserrat']"
+              onClick={handleLoadMore}
+              disabled={loading}
+            >
+              {loading ? 'Cargando...' : 'Ver más artículos'}
+            </button>
+            {error && <p className="mt-4 text-yellow-500 font-['Poppins']">{error}</p>}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
